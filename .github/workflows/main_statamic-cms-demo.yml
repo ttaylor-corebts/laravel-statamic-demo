@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'statamic-cms-demo'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_579D509D42C44C028AB4D2D756C41321 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E1FF059501F04DF4B8925D6CCB4527AF }}
           package: .
