@@ -4,7 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - dev     # Static web site preview will be created for PR.
+      - staging # Static web site preview will be created for PR.
+      - main    # Static web site preview will not be created for PR (See 'production_branch' below.)
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
@@ -32,6 +34,9 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "storage/app/static/centralus" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+          # Defines main branch to not create preview static web site (Staging will create preview)
+          # https://learn.microsoft.com/en-us/azure/static-web-apps/branch-environments?tabs=github-actions
+          production_branch: "main"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
