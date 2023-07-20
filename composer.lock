@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee0127bece222441aba2b78235747cda",
+    "content-hash": "fe78afa8456e9473f287bbfb2618b4d2",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -995,6 +995,47 @@
                 }
             ],
             "time": "2022-12-15T16:57:16+00:00"
+        },
+        {
+            "name": "doeanderson/statamic-github-workflow-dispatch",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doeanderson/statamic-github-workflow-dispatch.git",
+                "reference": "6b7484a942845b59930cd5bdbba60fc1cc76cd4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doeanderson/statamic-github-workflow-dispatch/zipball/6b7484a942845b59930cd5bdbba60fc1cc76cd4c",
+                "reference": "6b7484a942845b59930cd5bdbba60fc1cc76cd4c",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic GitHub Workflow Dispatch",
+                    "description": "Github Workflow Dispatch is a Statamic addon that makes it easy to run GitHub Actions workflows via Repository Dispatch Events."
+                },
+                "laravel": {
+                    "providers": [
+                        "DoeAnderson\\StatamicGithubWorkflowDispatch\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DoeAnderson\\StatamicGithubWorkflowDispatch\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/doeanderson/statamic-github-workflow-dispatch/issues",
+                "source": "https://github.com/doeanderson/statamic-github-workflow-dispatch/tree/0.1.0"
+            },
+            "time": "2023-05-23T18:37:13+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
